@@ -97,5 +97,7 @@ print(fizzBuzz(15))
 
 ```
 
+# [Link to Solution](Solution.md)
+
 
 

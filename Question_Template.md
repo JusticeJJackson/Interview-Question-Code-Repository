@@ -10,8 +10,25 @@ Input:
 
 {Input here}
 
+Output:
+
+{Output here}
 
 ## Example 2:
+
+Input:
+
+{Input here}
+
+Output:
+
+{Output here}
+
+## Example 3:
+
+Input:
+
+{Input here}
 
 Output:
 
@@ -27,9 +44,10 @@ Output:
 ## Python Starter Code
 
 ```python
-"""
 
 ```
 
+
+# [Link to Solution](Solution.md)
 
 
