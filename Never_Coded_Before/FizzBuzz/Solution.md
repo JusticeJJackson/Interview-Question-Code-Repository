@@ -1,6 +1,6 @@
 # Solution 1 - Naive Approach
 
-
+This approach checks every number from 1 to n and prints out "Fizz" for multiples of 3, "Buzz" for multiples of 5, "FizzBuzz" for multiples of both 3 and 5, and the number itself for all other cases.
 
 ## Time Complexity: O(n)
 ## Space Complexity: O(1)
@@ -27,6 +27,7 @@ public static void fizzBuzz(int n) {
 
 # Solution 2 - String Concatenation
 
+This approach uses string concatenation to build the output for each number, and then prints out the resulting string.
 
 ## Time Complexity: O(n)
 ## Space Complexity O(1)
@@ -53,6 +54,7 @@ public static void fizzBuzz(int n) {
 
 # Solution 3 - String Concatenation with StringBuilder
 
+This approach is similar to the previous one, but uses a StringBuilder to improve performance when building the output string.
 
 ## Time Complexity: O(n)
 ## Space Complexity: O(n)
