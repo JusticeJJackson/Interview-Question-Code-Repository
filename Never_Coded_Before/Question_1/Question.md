@@ -31,6 +31,8 @@ Output:
 0
 
 
+## Java Starter Code
+
 ```java
  * 
  * Example 1:
@@ -82,6 +84,7 @@ public class Solution {
 }
 ```
 
+## Python Starter Code
 ```python
 """
 Problem: Jewels and Stones
