@@ -44,7 +44,6 @@ Output:
 ## Python Starter Code
 
 ```python
-"""
 
 ```
 
