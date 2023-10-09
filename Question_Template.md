@@ -49,4 +49,6 @@ Output:
 ```
 
 
+# [Link to Solution](Solution.md)
+
 
