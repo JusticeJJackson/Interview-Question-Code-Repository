@@ -3,8 +3,8 @@
 This solution involves iterating through the input linked lists, converting their values to integers, adding them together, and then creating a new linked list with the resulting digits.
 
 
-## Time Complexity: O(n)
-## Space Complexity: O(n)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(n)`
 
 
 
@@ -61,8 +61,8 @@ public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
 This solution adds the values of the nodes of the two linked lists along with the carry value recursively. The sum is computed as (l1.val + l2.val + carry) % 10 and the carry is updated as (l1.val + l2.val + carry) / 10. The new node is created with the sum as its value and its next pointer is set to the result of calling the function recursively on the next nodes of the input lists. The base case is when both input lists are null and the carry is 0, in which case null is returned. The head of the result list is returned as the result of calling the function on the head nodes of the input lists with an initial carry of 0.
 
 
-## Time Complexity: O(n)
-## Space Complexity O(n)
+## Time Complexity: `O(n)`
+## Space Complexity `O(n)`
 
 ## Code
 
@@ -102,8 +102,8 @@ private static ListNode addTwoNumbersHelper(ListNode l1, ListNode l2, int carry)
 
 The code adds two numbers represented by linked lists, digit by digit. It iterates through each node in both linked lists, adds the corresponding values, and keeps track of any carry. A new node is created for the result and the carry is carried over to the next iteration. If there is still a carry after iterating through both linked lists, a new node is created with the value of the carry. The final result is the linked list that starts with the second node of the dummy node.
 
-## Time Complexity: O(n)
-## Space Complexity: O(n)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(n)`
 
 ## Code
 

@@ -3,8 +3,8 @@
 This approach involves using two nested loops to iterate over each element in the array and compare it to the elements to its right, looking for the next highest temperature. If a higher temperature is found, the number of days until that temperature is reached is calculated and stored in the output array.
 
 
-## Time Complexity: O(n^2)
-## Space Complexity: O(n)
+## Time Complexity: `O(n^2)`
+## Space Complexity: `O(n)`
 
 
 
@@ -34,8 +34,8 @@ public int[] dailyTemperatures(int[] temperatures) {
 This solution uses a simple approach to solve the problem of finding the number of days until the next higher temperature in an array. It iterates over the array and for each element, it finds the next higher temperature by comparing it with all the elements to its right until a higher temperature is found. If a higher temperature is found, it calculates the number of days until that temperature is reached and stores it in the output array. If there is no next higher temperature, the output array is initialized with 0 for that element.
 
 
-## Time Complexity: O(n^2)
-## Space Complexity O(n)
+## Time Complexity: `O(n^2)`
+## Space Complexity `O(n)`
 
 ## Code
 
@@ -64,8 +64,8 @@ public int[] dailyTemperatures(int[] temperatures) {
 
 This approach involves using a stack to keep track of the indices of elements in the array that do not have a next higher temperature yet. We iterate over the array from right to left, and for each element, we pop all indices of elements with temperatures lower than or equal to the current element. The top of the stack now contains the index of the element with the next highest temperature. The number of days until that temperature is reached is calculated and stored in the output array. The current element's index is then pushed onto the stack.
 
-## Time Complexity: O(n)
-## Space Complexity: O(n)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(n)`
 
 ## Code
 

@@ -2,68 +2,68 @@
 
 ## Problem Statement
 
-Given a 2D Sorted Binary Square Array consisting solely of integers ‘1’ and ‘0’ sorted such that all ‘0’s in a row come before all ‘1’s. Find the first column that contains any instance of ‘1’.
+Given a 2D Sorted Binary Square Array consisting solely of integers `1` and `0` sorted such that all `0`s in a row come before all `1`s. Find the first column that contains any instance of `1`.
 
 ## Example 1:
 
 Input = 
 
-[
- [0,0,0,0,0,1,1,1],
- [0,0,0,0,0,0,0,0],
- [0,0,1,1,1,1,1,1],
- [0,0,0,0,1,1,1,1],
- [0,0,0,1,1,1,1,1]
-]
+`[  
+ [0,0,0,0,0,1,1,1],   
+ [0,0,0,0,0,0,0,0],  
+ [0,0,1,1,1,1,1,1],  
+ [0,0,0,0,1,1,1,1],  
+ [0,0,0,1,1,1,1,1]  
+]`
 
 Output = 
 
-3
+`3`
 
 Explanation: 
 
-The column of the first ‘1’ that appears in any row is 3, as input[2, 2] = 1
+The column of the first `1` that appears in any row is `3`, as `input[2][2] = 1`
 
 ## Example 2:
 
 Input = 
 
-[
+`[
  [0,0,0,0,0,1,1,1],
  [0,1,1,1,1,1,1,1],
  [1,1,1,1,1,1,1,1],
  [1,1,1,1,1,1,1,1],
  [0,0,0,0,0,0,0,0]
-]
+]`
 
 Output =
 
- 1
+ `1`
 
 Explanation: 
 
-The column of the first ‘1’ that appears in any row is 1, as input[2][0] = 1
+The column of the first `1` that appears in any row is `1`, as `input[2][0] = 1`
 
 
 ## Example 3:
 
 Input = 
 
-[
+`[
  [0,0,0,0,0,0,0,0],
  [0,0,0,0,0,0,0,0],
  [0,0,0,0,0,0,0,0],
  [0,0,0,0,0,0,0,0],
  [0,0,0,0,0,0,0,0]
-]
+]`
 
 Output = 
 
--1
+`-1`
 
 Explanation: 
 
-There are no instances of ‘1’, hence we return an invalid column value ‘-1’.
+There are no instances of `1`, hence we return an invalid column value `-1`.
 
 ## Java Starter Code
 
