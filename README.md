@@ -1,18 +1,18 @@
 # Interview Prep Repository
 
-## Overview
+## Overview]
 
 Welcome to the Interview Prep repository! This collection is designed to help you prepare for technical interviews by providing a curated set of questions and solutions. The repository is organized into two main folders:
 
-### 1. Never Coded before
+### 1. [Never Coded before](Never_Coded_Before)
 
 This folder contains questions best suited for beginner programmers. Only a fundemental knowledge of programming is required for these questions.
 
-### 2. LC Easy
+### 2. [LC Easy](LC_Easy)
 
 This folder contains a selection of easy-level coding interview questions sourced from LeetCode. These questions cover fundamental concepts and are a great starting point for building your problem-solving skills.
 
-### 3. LC Medium
+### 3. [LC Medium](LC_Medium)
 
 In the LC Medium folder, you'll find a set of medium-level coding interview questions. These questions are designed to challenge you a bit more and delve into deeper problem-solving strategies.
 
