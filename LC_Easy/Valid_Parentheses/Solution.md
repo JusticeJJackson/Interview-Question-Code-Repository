@@ -2,8 +2,8 @@
 
 This approach repeatedly removes matched pairs of parentheses from the string until no more replacements can be made. If the resulting string is empty, it means all parentheses have been matched, and the original string is valid. 
 
-## Time Complexity: O(n^2)
-## Space Complexity: O(1)
+## Time Complexity: `O(n^2)`
+## Space Complexity: `O(1)`
 
 ## Code
 
@@ -28,8 +28,8 @@ public static boolean isValid(String s) {
 This solution uses a stack to keep track of the opening parentheses encountered. Whenever a closing parentheses is encountered, it is compared to the top of the stack to see if they match. If they do, the opening parentheses are popped off the stack. If they don't, the string is not valid.
 
 
-## Time Complexity: O(n)
-## Space Complexity: O(n)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(n)`
 
 
 ## Code
