@@ -1,4 +1,4 @@
-# Leftmost Column with at least one 1 in a row-wise (Justices Uber Interview)
+# Leftmost Column with at least one 1 in a row-wise 
 
 ## Problem Statement
 
