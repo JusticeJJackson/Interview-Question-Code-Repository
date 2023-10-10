@@ -8,22 +8,22 @@ Determine whether an integer is a palindrome. An integer is a palindrome when it
 
 Input:
 
-121
+`n = 121`
 
 Output:
 
-True
+`True`
 
 
 ## Example 2:
 
 Input:
 
--121
+`n = -121`
 
 Output:
 
-False
+`False`
 
 > Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
@@ -31,11 +31,11 @@ False
 
 Input:
 
-10
+`n = 10`
 
 Output:
 
-False
+`False`
 
 > Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
@@ -75,7 +75,7 @@ public class Solution {
      * @param x the integer to check
      * @return true if x is a palindrome, false otherwise
      */
-    public static boolean isPalindrome(int x) {
+    public static boolean isPalindrome(int n) {
         // implementation here
     }
 
@@ -111,21 +111,21 @@ Problem: Palindrome Number
 Determine whether an integer is a palindrome. An integer is a palindrome when it reads the same backward as forward.
 
 Example 1:
-Input: x = 121
+Input: n = 121
 Output: true
 
 Example 2:
-Input: x = -121
+Input: n = -121
 Output: false
 Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
 Example 3:
-Input: x = 10
+Input: n = 10
 Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 """
 
-def is_palindrome(x: int) -> bool:
+def is_palindrome(n: int) -> bool:
     # implementation here
     pass
 

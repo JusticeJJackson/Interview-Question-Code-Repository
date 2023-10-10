@@ -14,9 +14,7 @@ Output:
 
 `4`
 
-Explanation:
-
-There are 4 good pairs `(0,3)`, `(0,4)`, `(3,4)`, `(2,5)` 0-indexed.
+> Explanation: There are 4 good pairs `(0,3)`, `(0,4)`, `(3,4)`, `(2,5)` 0-indexed.
 
 ## Example 2:
 
@@ -28,9 +26,7 @@ Output:
 
 `6`
 
-Explanation:
-
-Each pair in the array are good.
+> Explanation: Each pair in the array are good.
 
 ## Example 3:
 
@@ -42,8 +38,7 @@ Output:
 
 `0`
 
-Explanation:
-There are no good pairs in the array
+> Explanation: There are no good pairs in the array
 
 ## Java Starter Code
 

@@ -2,8 +2,8 @@
 A simple solution is to iterate over each character in the S string and check if it's present in the J string. If it is, we increment the count. This solution has a time complexity of O(N*M), where N is the length of S and M is the length of J.
 
 
-## Time Complexity: O(N*M) 
-## Space Complexity: O(N*M)
+## Time Complexity: `O(N*M)`
+## Space Complexity: `O(N*M)`
 
 
 ## Code
@@ -24,8 +24,8 @@ public int numJewelsInStones(String J, String S) {
 
 This solution is to create a hash set of the characters in the J string and then iterate over each character in the S string and check if it's present in the hash set. If it is, we increment the count.
 
-## Time Complexity: O(N+M)
-## Space Complexity: O(N+M)
+## Time Complexity: `O(N+M)`
+## Space Complexity: `O(N+M)`
 
 
 ## Code
@@ -52,8 +52,8 @@ This solution uses an array to keep track of the count of each character in the 
 
 ## Code
 
-## Time Complexity: O(n)
-## Space Complexity: O(1)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(1)`
 
 
 ```java

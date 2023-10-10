@@ -2,15 +2,15 @@
 
 One possible solution is to convert the integer to a string and check if the string is a palindrome. Another possible solution is to reverse the integer and compare it with the original integer. Here is an example implementation of the second solution:
 
-## Time Complexity:  O(log10(x)) or O(n)
-## Space Complexity:  O(1)
+## Time Complexity:  `O(log10(x)) or O(n)`
+## Space Complexity:  `O(1)`
 > The time complexity is O(log10(x)) because the number of digits in x is given by log10(x). This can also be written as O(n) where n is the number of digits inputted
 
 
 ## Code
 
 ```java
-public boolean isPalindrome(int x) {
+public boolean isPalindrome(int n) {
     if (x < 0) { // check if integer is negative
         return false; // return false if integer is negative
     }
@@ -30,15 +30,15 @@ public boolean isPalindrome(int x) {
 
 One Solution would be converting the integer to a string and then using two pointers to create a “sliding window” to see if the left and right pointers are equal, slowly moving in towards the middle. 
 
-## Time Complexity: O(log10(x)) or O(n)
-## Space Complexity: O(log10(x)) or O(n)
+## Time Complexity: `O(log10(x)) or O(n)`
+## Space Complexity: `O(log10(x)) or O(n)`
 > The time and space complexity is O(log10(x)) because the number of digits in x is given by log10(x). This can also be written as O(n) where n is the number of digits inputted
 
 ## Code
 
 ```java
-public boolean isPalindrome(int x) {
-    String str = Integer.toString(x); // convert integer to string
+public boolean isPalindrome(int n) {
+    String str = Integer.toString(n); // convert integer to string
     int left = 0; // initialize left pointer
     int right = str.length() - 1; // initialize right pointer
     while (left < right) { // loop while left is less than right
@@ -55,15 +55,15 @@ public boolean isPalindrome(int x) {
 # Solution 3 - Convert to string and use string methods to reverse
 
 
-## Time Complexity: O(log10(x)) or O(n)
-## Space Complexity: O(log10(x)) or O(n)
+## Time Complexity: `O(log10(x)) or O(n)`
+## Space Complexity: `O(log10(x)) or O(n)`
 > The time and space complexity is O(log10(x)) because the number of digits in x is given by log10(x). This can also be written as O(n) where n is the number of digits inputted
 
 ## Code
 
 ```java
-public boolean isPalindrome(int x) {
-    String str = Integer.toString(x); // convert integer to string
+public boolean isPalindrome(int n) {
+    String str = Integer.toString(n); // convert integer to string
     int len = str.length(); // get length of string
     String reverse = ""; // initialize reversed string
     for (int i = len - 1; i >= 0; i--) {

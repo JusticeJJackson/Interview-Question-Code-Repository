@@ -1,10 +1,10 @@
 # Solution 1 - Naive Approach
 
-
-## Time Complexity: O(n)
-## Space Complexity: O(1)
-
 This approach compares the frequency of characters between the two strings to determine the difference.
+
+## Time Complexity: `O(n)`
+## Space Complexity: `O(1)`
+
 
 ## Code
 
@@ -32,8 +32,8 @@ public char findTheDifference(String s, String t) {
 
 This approach uses a HashMap to store the frequency of characters in string s, and then iterates through string t to check if the character is present in the HashMap and has a non-zero frequency. If so, it decrements the frequency, otherwise it returns the character.
 
-## Time Complexity: O(n)
-## Space Complexity: O(n)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(n)`
 
 ## Code
 
@@ -59,8 +59,8 @@ public char findTheDifference(String s, String t) {
 
 This approach XORs the ASCII values of all characters in both strings. The resulting value is the ASCII value of the added character.
 
-## Time Complexity: O(n)
-## Space Complexity: O(1)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(1)`
 
 ## Code
 
