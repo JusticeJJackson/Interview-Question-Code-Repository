@@ -50,12 +50,10 @@ public int numJewelsInStones(String J, String S) {
 
 This solution uses an array to keep track of the count of each character in the S string. Then we iterate over the characters in the J string and add the corresponding count to the total count.
 
-## Code
-
 ## Time Complexity: `O(n)`
 ## Space Complexity: `O(1)`
 
-
+## Code
 ```java
 public int numJewelsInStones(String J, String S) {
     int count = 0; // Initialize a counter for the number of jewels found in S
