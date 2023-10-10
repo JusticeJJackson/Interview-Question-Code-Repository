@@ -24,6 +24,22 @@ Output:
 ## Java Starter Code
 
 ```java
+
+/**
+ * Problem Statement:
+ * Given a positive integer n, the task is to find whether this number reaches 1
+ * after performing the following two operations:
+ * - If n is even, then n = n/2.
+ * - If n is odd, then n = 3*n + 1.
+ * Repeat the above steps, until it becomes 1.
+ *
+ * Example:
+ * Input:
+ * n = 12
+ * Output:
+ * 12, 6, 3, 10, 5, 16, 8, 4, 2, 1
+ */
+
 public class Solution{
 
     // Method to calculate the number of steps required to reach 1
@@ -102,6 +118,21 @@ public class Solution{
 ## Python Starter Code
 
 ```python
+"""
+Problem Statement:
+Given a positive integer n, the task is to find whether this number reaches 1
+after performing the following two operations:
+- If n is even, then n = n/2.
+- If n is odd, then n = 3*n + 1.
+Repeat the above steps, until it becomes 1.
+
+Example:
+Input:
+n = 12
+Output:
+12, 6, 3, 10, 5, 16, 8, 4, 2, 1
+"""
+
 # Implement Collatz Conjecture here
 def collatz_conjecture(n):
     """
