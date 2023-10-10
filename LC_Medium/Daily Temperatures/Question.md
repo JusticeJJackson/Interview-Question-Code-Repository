@@ -42,6 +42,9 @@ Output:
 
 [1,1,0]
 
+Explanation: For the first day, the next higher temperature is on day 2, and similarly for the second day. There is no higher temperature for the third day.
+
+
 ## Java Starter Code
 
 ```java
