@@ -2,8 +2,8 @@
 
 This solution iterates over all pairs of elements in the array, checking if each pair is a good pair.
 
-## Time Complexity: O(n^2)
-## Space Complexity: O(1)
+## Time Complexity: `O(n^2)`
+## Space Complexity: `O(1)`
 
 ## Code
 
@@ -29,8 +29,8 @@ public class Solution1 {
 
 Utilizing a HashMap to store the frequency of each number, this solution counts the number of good pairs by considering the combinations of frequencies. It has a time complexity of O(n) and a space complexity of O(n).
 
-## Time Complexity: O(n)
-## Space Complexity: O(n)
+## Time Complexity: `O(n)`
+## Space Complexity: `O(n)`
 
 ## Code
 
@@ -60,8 +60,8 @@ public class Solution {
 
 By sorting the array, this solution groups identical numbers together. It then calculates the count of good pairs based on the runs of identical numbers. 
 
-## Time Complexity: O(nlog(n))
-## Space Complexity: O(1)
+## Time Complexity: `O(nlog(n))`
+## Space Complexity: `O(1)`
 
 ## Code
 
