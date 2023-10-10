@@ -35,8 +35,6 @@ The answer is "b", with the length of 1.
 
 Input: 
 
-Input: 
-
 s = "pwwkew"
 
 Output: 
