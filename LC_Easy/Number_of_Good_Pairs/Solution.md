@@ -8,7 +8,7 @@ This solution iterates over all pairs of elements in the array, checking if each
 ## Code
 
 ```java
-public class Solution1 {
+public class Solution {
     public static int numIdenticalPairs(int[] nums) {
         int count = 0;
 
