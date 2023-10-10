@@ -46,61 +46,47 @@ Output:
 import java.util.*;
 
 public class Solution {
+    /**
+     * Given an array of integers `nums`. A pair `(i,j)` is called good if `nums[i] == nums[j]` and `i < j`.
+     * Return the number of good pairs.
+     *
+     * @param nums the input array of integers
+     * @return the number of good pairs
+     */
+    public static int numIdenticalPairs(int[] nums) {
+        // Implement solution here
+        int count = 0;
+        Map<Integer, Integer> frequencyMap = new HashMap<>();
 
-    static class PlaylistRandomizer {
-        private List<String> songs;
-        private int k;
-        private List<String> playedSongs;
-
-        /**
-         * Constructor for PlaylistRandomizer.
-         *
-         * @param songs an array of songs represented as strings
-         * @param k     an integer representing the constraint on repeated songs
-         */
-        public PlaylistRandomizer(String[] songs, int k) {
-            this.songs = new ArrayList<>(Arrays.asList(songs));
-            this.k = k;
-            this.playedSongs = new ArrayList<>();
+        for (int num : nums) {
+            frequencyMap.put(num, frequencyMap.getOrDefault(num, 0) + 1);
         }
 
-        /**
-         * Plays a random song from the playlist, ensuring it hasn't been played in the last k songs.
-         *
-         * @return the name of the currently played song
-         */
-        public String playSong() {
-            if (songs.isEmpty()) {
-                System.out.println("No more songs in the playlist.");
-                return null;
-            }
-
-            Random random = new Random();
-            int randomIndex = random.nextInt(songs.size());
-            String currentSong = songs.remove(randomIndex);
-            playedSongs.add(currentSong);
-
-            if (playedSongs.size() > k) {
-                String removedSong = playedSongs.remove(0);
-                songs.add(removedSong);
-            }
-
-            System.out.printf("Playing song: %s, Available songs: %s\n", currentSong, songs);
-            return currentSong;
+        for (int frequency : frequencyMap.values()) {
+            count += frequency * (frequency - 1) / 2;
         }
+
+        return count;
     }
 
     /**
-     * Tests the PlaylistRandomizer class with some example inputs.
+     * Tests the numIdenticalPairs method with some example inputs.
      *
      * @param args the command line arguments (unused)
      */
     public static void main(String[] args) {
-        String[] playlist = {"A", "B", "C", "D", "E"};
-        PlaylistRandomizer playlistRandomizer = new PlaylistRandomizer(playlist, 3);
+        int[][] numsInputs = {{1, 2, 3, 1, 1, 3}, {1, 1, 1, 1}, {1, 2, 3}};
+        int[] expectedOutputs = {4, 6, 0};
 
-        for (int i = 0; i < 7; i++) {
-            playlistRandomizer.playSong();
+        for (int i = 0; i < numsInputs.length; i++) {
+            int[] numsInput = numsInputs[i];
+            int expectedOutput = expectedOutputs[i];
+            int output = numIdenticalPairs(numsInput);
+            if (output == expectedOutput) {
+                System.out.printf("PASS: numIdenticalPairs(%s) = %d\n", Arrays.toString(numsInput), output);
+            } else {
+                System.out.printf("FAIL: numIdenticalPairs(%s) = %d (expected %d)\n", Arrays.toString(numsInput), output, expectedOutput);
+            }
         }
     }
 }
