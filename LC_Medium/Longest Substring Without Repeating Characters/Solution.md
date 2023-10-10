@@ -1,10 +1,10 @@
 # Solution 1 - Brute Force
 
-The brute force approach involves generating all possible substrings of the given string and checking if each substring contains unique characters. The time complexity of this approach is O(n^3).
+The brute force approach involves generating all possible substrings of the given string and checking if each substring contains unique characters.
 
 
-## Time Complexity: O(n^3)
-## Space Complexity: O(n)
+## Time Complexity: `O(n^3)`
+## Space Complexity: `O(n)`
 
 
 
@@ -44,8 +44,10 @@ public boolean allUnique(String s, int start, int end) {
 
 # Solution 2 - Sliding Window
 
-## Time Complexity: O(n)
-## Space Complexity: O(n)
+This solution involves using a sliding window approach with a HashSet to keep track of unique characters. The algorithm iterates through the string, updating the window boundaries based on character occurrences, and returns the length of the longest non-repeating substring.
+
+## Time Complexity: `O(n)`
+## Space Complexity: `O(n)`
 
 ## Code
 

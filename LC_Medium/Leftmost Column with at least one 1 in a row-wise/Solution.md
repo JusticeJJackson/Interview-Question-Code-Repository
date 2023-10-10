@@ -2,8 +2,8 @@
 
 This method finds the leftmost column index with a 1 in a given 2D matrix of integers, where each row is sorted in ascending order. It first initializes the leftmost column to a very large number to ensure that any leftmost column found will be smaller, then iterates over all rows and columns of the matrix to find the first 1 in each row, updating the leftmost column index accordingly. Finally, it returns the leftmost column index if found, otherwise returns -1.
 
-## Time Complexity: O(n^2)
-## Space Complexity: O(n)
+## Time Complexity: `O(n^2)`
+## Space Complexity: `O(n)`
 
 ## Code
 
@@ -41,8 +41,8 @@ This implementation uses binary search to search for the leftmost 1 in each row.
 
 
 
-## Time Complexity: O(n log(n))
-## Space Complexity O(n)
+## Time Complexity: `O(n log(n))`
+## Space Complexity `O(n)`
 
 ## Code
 
@@ -52,6 +52,7 @@ public int leftMostColumnWithOne(int[][] matrix) {
     int cols = matrix[0].length;
     int leftmost = cols;
 
+    // loop through each row
     for (int i = 0; i < rows; i++) {
         int lo = 0;
         int hi = cols - 1;
@@ -68,6 +69,7 @@ public int leftMostColumnWithOne(int[][] matrix) {
         }
     }
 
+    // return the leftmost column index if found, otherwise return -1.
     return leftmost == cols ? -1 : leftmost;
 }
 
