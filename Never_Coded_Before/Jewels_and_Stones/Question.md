@@ -34,6 +34,7 @@ Output:
 ## Java Starter Code
 
 ```java
+*/
  * 
  * Example 1:
  * Input: J = "aA", S = "aAAbbbb"
