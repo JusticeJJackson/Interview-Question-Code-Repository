@@ -57,7 +57,7 @@ import java.util.Arrays;
  *
  * Output:
  * (2, 3)
- * Explanation: The sum of numbers at indices 2 and 3 is 7, which is the closest sum to the target (8) without exceeding it.
+ * Explanation: The sum of numbers at indices 2 and 3 is 7 (3 + 4), which is the closest sum to the target (8) without exceeding it.
  *
  * Example 2:
  * Input:
@@ -65,8 +65,8 @@ import java.util.Arrays;
  * target = 45
  *
  * Output:
- * (1, 2)
- * Explanation: The sum of numbers at indices 1 and 2 is 50, which is the closest sum to the target (45) without exceeding it.
+ * (0, 1)
+ * Explanation: The sum of numbers at indices 0 and 1 is 30 (10 + 20), which is the closest sum to the target (45) without exceeding it.
  *
  * Example 3:
  * Input:
@@ -74,8 +74,8 @@ import java.util.Arrays;
  * target = 23
  *
  * Output:
- * (1, 2)
- * Explanation: The sum of numbers at indices 1 and 2 is 25, which is the closest sum to the target (23) without exceeding it.
+ * (0, 2)
+ * Explanation: The sum of numbers at indices 0 and 2 is 20 (5 + 15), which is the closest sum to the target (23) without exceeding it.
  */
 public class Solution {
     /**
@@ -136,7 +136,7 @@ target = 8
 
 Output:
 (2, 3)
-Explanation: The sum of numbers at indices 2 and 3 is 7, which is the closest sum to the target (8) without exceeding it.
+Explanation: The sum of numbers at indices 2 and 3 is 7 (3 + 4), which is the closest sum to the target (8) without exceeding it.
 
 Example 2:
 Input:
@@ -144,8 +144,8 @@ nums = [10, 20, 30, 40, 50]
 target = 45
 
 Output:
-(1, 2)
-Explanation: The sum of numbers at indices 1 and 2 is 50, which is the closest sum to the target (45) without exceeding it.
+(0, 1)
+Explanation: The sum of numbers at indices 0 and 1 is 30 (10 + 20), which is the closest sum to the target (45) without exceeding it.
 
 Example 3:
 Input:
@@ -153,8 +153,8 @@ nums = [5, 10, 15, 20, 25]
 target = 23
 
 Output:
-(1, 2)
-Explanation: The sum of numbers at indices 1 and 2 is 25, which is the closest sum to the target (23) without exceeding it.
+(0, 2)
+Explanation: The sum of numbers at indices 0 and 2 is 20 (5 + 15), which is the closest sum to the target (23) without exceeding it.
 """
 
 def closest_two_sum_indices(nums, target):
