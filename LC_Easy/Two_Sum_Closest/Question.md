@@ -45,37 +45,44 @@ Output:
 import java.util.Arrays;
 
 /**
- * Problem: Closest Two Sum
+ * Problem: Closest Two Sum Without Exceeding Target
  *
- * Given an array of integers 'nums' and an integer 'target', find a pair of indices (i, j)
- * such that the sum of nums[i] and nums[j] is closest to the target, but does not exceed it.
+ * Given an array of integers `nums` and an integer `target`, find a pair of
+ * distinct indices (i, j) such that:
+ * - The sum of nums[i] + nums[j] is the closest possible to the target,
+ * - Without exceeding the target.
+ *
+ * Return the pair of indices that achieves this. If multiple pairs yield the same sum,
+ * any valid pair can be returned.
+ *
+ * Examples:
  *
  * Example 1:
  * Input:
- * nums = {1, 2, 3, 4, 5}
+ * nums = [1, 2, 3, 4, 5]
  * target = 8
  *
  * Output:
- * (2, 3)
- * Explanation: The sum of numbers at indices 2 and 3 is 7 (3 + 4), which is the closest sum to the target (8) without exceeding it.
+ * (2, 4)
+ * Explanation: nums[2] + nums[4] = 3 + 5 = 8, which is exactly the target and the best possible sum.
  *
  * Example 2:
  * Input:
- * nums = {10, 20, 30, 40, 50}
+ * nums = [10, 20, 30, 40, 50]
  * target = 45
  *
  * Output:
  * (0, 1)
- * Explanation: The sum of numbers at indices 0 and 1 is 30 (10 + 20), which is the closest sum to the target (45) without exceeding it.
+ * Explanation: nums[0] + nums[1] = 10 + 20 = 30, which is the closest sum to 45 without exceeding it.
  *
  * Example 3:
  * Input:
- * nums = {5, 10, 15, 20, 25}
+ * nums = [5, 10, 15, 20, 25]
  * target = 23
  *
  * Output:
  * (0, 2)
- * Explanation: The sum of numbers at indices 0 and 2 is 20 (5 + 15), which is the closest sum to the target (23) without exceeding it.
+ * Explanation: nums[0] + nums[2] = 5 + 15 = 20, which is the closest valid sum under 23.
  */
 public class Solution {
     /**
@@ -124,10 +131,15 @@ public class Solution {
 
 ```python
 """
-Problem: Closest Two Sum
+Problem: Closest Two Sum Without Exceeding Target
 
-Given an array of integers 'nums' and an integer 'target', find a pair of indices (i, j)
-such that the sum of nums[i] and nums[j] is closest to the target, but does not exceed it.
+Given an array of integers `nums` and an integer `target`, find a pair of **distinct indices** `(i, j)` such that:
+- The sum of `nums[i] + nums[j]` is the **closest possible to the target**, 
+- **Without exceeding** the target.
+
+Return the pair of indices that achieves this. If multiple pairs yield the same sum, any valid pair can be returned.
+
+Examples:
 
 Example 1:
 Input:
@@ -135,8 +147,8 @@ nums = [1, 2, 3, 4, 5]
 target = 8
 
 Output:
-(2, 3)
-Explanation: The sum of numbers at indices 2 and 3 is 7 (3 + 4), which is the closest sum to the target (8) without exceeding it.
+(2, 4)
+Explanation: nums[2] + nums[4] = 3 + 5 = 8, which is exactly the target and the best possible sum.
 
 Example 2:
 Input:
@@ -145,7 +157,7 @@ target = 45
 
 Output:
 (0, 1)
-Explanation: The sum of numbers at indices 0 and 1 is 30 (10 + 20), which is the closest sum to the target (45) without exceeding it.
+Explanation: nums[0] + nums[1] = 10 + 20 = 30, which is the closest sum to 45 without exceeding it.
 
 Example 3:
 Input:
@@ -154,7 +166,7 @@ target = 23
 
 Output:
 (0, 2)
-Explanation: The sum of numbers at indices 0 and 2 is 20 (5 + 15), which is the closest sum to the target (23) without exceeding it.
+Explanation: nums[0] + nums[2] = 5 + 15 = 20, which is the closest valid sum under 23.
 """
 
 def closest_two_sum_indices(nums, target):
